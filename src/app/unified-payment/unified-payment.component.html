@@ -1,0 +1,12 @@
+<form method="POST" [action]="prod  ? 'https://test.payarena.com/'+merchantid  : 'https://test.payarena.com/'+merchantid ">
+
+  <input type="hidden" name="secretKey" [value]="secretkey" />
+
+  <input type="hidden" name="description" [value]="description" />
+  <input type="hidden" name="amount" [value]="amount" />
+  <input type="hidden" name="currency" [value]="currency" />
+  <input type="hidden" name="redirectUrl" [value]="redirecturl" />
+
+
+  <button class="glow-on-hover"  (click)=" onSubmit()" type="submit" id="start-payment-button">Pay {{amount | currency:'₦' }} </button>
+</form>
