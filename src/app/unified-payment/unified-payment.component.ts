@@ -29,7 +29,7 @@ export class UnifiedPaymentComponent implements OnInit {
 
   onSubmit(){
     let f = document.createElement("form");
-f.setAttribute("method", "post");
+f.setAttribute("method", "POST");
 f.setAttribute(
   "action",
  this.prod==1? ''        :   'https://test.payarena.com/'+this.merchantid
@@ -52,6 +52,10 @@ f.setAttribute(
   {
     name: "currency",
     value: this.currency,
+  },
+  {
+    name: "fee",
+    value: this.fee,
   },
   {
     name: "redirectUrl",

@@ -1,27 +1,42 @@
-# UnifiedPay
+# Unified-Pay Web SDK
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
+Unified-Pay  is a quick and secure way to handle payment . This web SDK can be used for any web framework eg Angular,React,Vue,Ruby e.t.c
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+``` js
+   <unified-payment 
+   amount=200 
+   currency=566 
+   description="" 
+   redirecturl="" 
+   secretkey="" 
+   merchantid="" 
+   fee=0  
+   prod=0 
+   >
+   </unified-payment>
 
-## Code scaffolding
+ <script src="https://bit.ly/3r1cNFO"></script>
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Configuration Options
 
-## Build
+- [`amount`](#amount)
+- [`currency`](#currency)
+- [`amount`](#amount)
+- [`description`](#description)
+- [`redirecturl`](#redirecturl)
+- [`secretkey`](#secretkey)
+- [`merchantid`](#merchantid)
+- [`fee`](#fee)
+- [`prod`](#prod) eg 0 for test , 1 for prod
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+**string: Required**
+For  secret key reach out to  [Unified Payments](https://up-ng.com) settings.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**string: Required**
+For  merchant id reach out to  [Unified Payments](https://up-ng.com) settings.
