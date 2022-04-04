@@ -1,6 +1,8 @@
 # Unified-Pay Web SDK
 
-Unified-Pay  is a quick and secure way to handle payment . This web SDK can be used for any web framework eg Angular,React,Vue,Ruby e.t.c
+Unified-Pay  is a quick and secure way to handle payment . This web SDK can be used for any web framework eg Angular,React,Vue,Ruby e.t.c.
+
+For more information checkout [Unified Payments](https://up-ng.com) 
 
 ## Installation
 
@@ -33,10 +35,10 @@ Unified-Pay  is a quick and secure way to handle payment . This web SDK can be u
 - [`prod`](#prod) eg 0 for test , 1 for prod
 
 
-**string: Required**
-For  secret key reach out to  [Unified Payments](https://up-ng.com) settings.
+**secretkey: Required**
+For  secret key register at  [Unified Payments](https://test.payarena.com/prospectivemerchants) .
 
 
 
-**string: Required**
-For  merchant id reach out to  [Unified Payments](https://up-ng.com) settings.
+**merchantid: Required**
+For  merchant id register at  [Unified Payments](https://test.payarena.com/prospectivemerchants).
